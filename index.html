@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="nav-dark">
+      <a href="#" id="logo">TextInfo</a>
+      <a href="#">About Us</a>
+    </nav>
+    <main class="main-dark">
+      <textarea
+        id="text"
+        cols="120"
+        rows="30"
+        placeholder="Please Enter Your Text Here..."
+        onkeyup="count()"
+      ></textarea>
+      <div id="btn-grp">
+        <button class="btn-dark" onclick="allCap()">Captilize All Text</button>
+        <button class="btn-dark" onclick="allLow()">Lower All Text</button>
+        <button class="btn-dark" onclick="firstChar()">First Character Capital</button>
+        <button class="btn-dark" onclick="copy()">Copy</button>
+        <button class="btn-dark">Character Count : <span id="count">0</span></button>
+        <button class="btn-dark">Word Count : <span id="wordCount">0</span></button>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
